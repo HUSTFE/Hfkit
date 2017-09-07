@@ -1,0 +1,17 @@
+{
+  "name": "hfkit",
+  "version": "0.0.1",
+  "description": "A front-end starter-kit and build-kit.",
+  "main": "src/hfkit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fe",
+    "build",
+    "kit",
+    "starter"
+  ],
+  "author": "HUSTFE",
+  "license": "ISC"
+}
