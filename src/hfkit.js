@@ -1,7 +1,8 @@
 function hfkit() {
-    var yargs = require('yargs');
+    var Globaldefine = require('./global')();
+    
+    
 
-    console.log(yargs.argv)
 }
 
 exports = module.exports = hfkit;
