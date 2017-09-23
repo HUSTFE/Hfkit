@@ -20,11 +20,16 @@ function commandPrepare() {
         .argv;
 }
 
-function commandhandler() {
-    this['start'] = require('./start');
-    this['gen'] = require('./generator');
-    this['build'] = require('./build');
-    this['serve'] = require('./serve');
+function commandHandler(command) {
+    var handler = require('./'+command);
+    if(handler.start) {
+        handler.start();
+    } else {
+        console.log('Command not available, type --help for available options')
+    }
 }
 
-exports = module.exports = {commandPrepare: commandPrepare};
+exports = module.exports = {
+    commandPrepare: commandPrepare,
+    commandHandler: commandHandler
+};

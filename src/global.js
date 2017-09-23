@@ -3,8 +3,7 @@
  */
 
 function GlobalDefine() {
-    global.command = require('./command');
-    global.argv = command.commandPrepare();
+    global.argv = require('./command').commandPrepare();
 }
 
 exports = module.exports = GlobalDefine;
