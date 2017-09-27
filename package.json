@@ -19,6 +19,7 @@
   "author": "HUSTFE",
   "license": "ISC",
   "dependencies": {
+    "art-template": "^4.12.1",
     "yargs": "^8.0.2"
   }
 }
