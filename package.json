@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "A front-end starter-kit and build-kit.",
   "main": "src/hfkit.js",
+  "bin": {
+    "hfkit": "bin/hfkit"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "hfkit"
   },
   "keywords": [
     "fe",
@@ -13,5 +17,9 @@
     "starter"
   ],
   "author": "HUSTFE",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.12.1",
+    "yargs": "^8.0.2"
+  }
 }
